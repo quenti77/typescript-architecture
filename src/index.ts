@@ -5,6 +5,7 @@ import bodyParser from "body-parser"
 import cors from 'cors'
 
 import env from '@core/Environment'
+import dic from '@core/DIC'
 import auth from '@auth_infrastructure/Delivery/API/base'
 
 const router = express()

@@ -2,7 +2,7 @@ import { Client } from 'pg'
 
 import env from './Environment'
 
-export class Connection {
+export default class Connection {
   private client: Client | null;
 
   constructor() {
@@ -24,6 +24,3 @@ export class Connection {
     return this.client?.query(statement, parameters)
   }
 }
-
-const instance: Connection = new Connection()
-export default instance

@@ -1,4 +1,4 @@
-import { password_hash, password_verify } from 'nodejs-password'
+import {password_hash, password_verify} from 'nodejs-password'
 import IPassword from "@auth_domain/Services/IPassword";
 
 export default class NodePasswordService implements IPassword {

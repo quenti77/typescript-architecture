@@ -1,6 +1,6 @@
 import {IAuthentication} from "@auth_domain/Repositories/IAuthentication";
 import User from "@auth_domain/Models/User";
-import {Connection} from "@core/Connection";
+import Connection from "@core/Connection";
 import Email from "@auth_domain/ValueObjects/Email";
 import Identity from "@auth_domain/ValueObjects/Identity";
 
