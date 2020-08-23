@@ -13,6 +13,13 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@core/*": ["./Core/*"],
+      "@auth_application/*": ["./Auth/Application/*"],
+      "@auth_domain/*": ["./Auth/Domain/*"],
+      "@auth_infrastructure/*": ["./Auth/Infrastructure/*"]
+    }
   }
 }
