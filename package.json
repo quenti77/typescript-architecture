@@ -15,6 +15,7 @@
     "@types/express": "^4.17.7",
     "@types/node": "^14.6.0",
     "@types/pg": "^7.14.4",
+    "@types/socket.io": "^2.1.11",
     "@types/uuid": "^8.3.0",
     "nodemon": "^2.0.4",
     "rimraf": "^3.0.2",
@@ -29,6 +30,7 @@
     "module-alias": "^2.2.2",
     "nodejs-password": "^1.0.2",
     "pg": "^8.3.2",
+    "socket.io": "^2.3.0",
     "uuid": "^8.3.0"
   },
   "_moduleAliases": {

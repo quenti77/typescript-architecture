@@ -17,7 +17,7 @@ export default class ApiRegister implements IRegister {
     }
 
     this.response.json({
-      id: user!.identity.Id,
+      id: user!.identity!.Id,
       name: user!.name,
       email: user!.email
     }).end()

@@ -37,9 +37,10 @@ export default class PgsqlAuthentication implements IAuthentication {
   public async insert(user: User): Promise<User | null> {
     let results = null
     try {
-      const statement = `insert into "user" (id, name, email, password)
-        values ($1, $2, $3, $4)
+      const statement = `insert into "user" (id, name, email, password, created_at)
+        values ($1, $2, $3, $4, now())
         returning id, name, email, password, created_at`
+
       results = await this.connection.query(statement, [
           user.identity.Id,
           user.name,
@@ -47,6 +48,7 @@ export default class PgsqlAuthentication implements IAuthentication {
           user.password
       ])
     } catch (e) {
+      console.log(e)
       return null
     }
 

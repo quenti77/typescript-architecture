@@ -4,10 +4,10 @@ export default {
     port: process.env.HOST_PORT || 8000
   },
   db: {
-    user: 'member_area',
+    user: 'test',
     host: '127.0.0.1',
-    database: 'member_area',
-    password: 'member_area',
+    database: 'test',
+    password: 'test',
     port: 5432,
   },
   jwt: {
